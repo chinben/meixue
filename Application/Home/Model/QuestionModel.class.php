@@ -1,9 +1,12 @@
 <?php
 namespace Home\Model;
-use Think\Model;
-class QuestionModel extends Model {
 
-	//model使用到的数据库表
+use Think\Model;
+
+class QuestionModel extends Model
+{
+
+    //model使用到的数据库表
     const TB_QUESTION = 'question'; //问题表
 
     //查询问题列表
@@ -20,4 +23,4 @@ class QuestionModel extends Model {
         return $ret;
     }
 
- }
+}
