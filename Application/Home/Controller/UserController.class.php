@@ -90,9 +90,7 @@ class UserController extends Controller
             } else {
                 returnApiError("失败");
             }
-
         }
-
     }
 }
 

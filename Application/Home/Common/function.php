@@ -40,6 +40,10 @@ function returnApiError($msg = null)
     print json_encode($result);
 }
 
+/**
+ * 返回上传类
+ * @return \Think\Upload
+ */
 function getUpload()
 {
     $upload = new \Think\Upload(); // 实例化上传类
