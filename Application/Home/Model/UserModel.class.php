@@ -8,6 +8,7 @@ class UserModel extends Model
 
     //model使用到的数据库表
     const TB_USER = 'user'; //用户表
+    const TB_FOLLOW = 'follow'; //关注表
 
     //登录
     public function login($params)
@@ -83,5 +84,27 @@ class UserModel extends Model
         } else {
             return -1;
         }
+    }
+
+    //查看个人资料
+    public function personalPage($params)
+    {
+        //获取并格式化必要参数
+        $tb_user = self::TB_USER;
+        $tb_follow = self::TB_FOLLOW;
+        $user_id = $params['user_id'];
+        $followed_user_id = $params['followed_user_id'];
+        //拼接数据库语句并查询
+        $sql = "select * from {$tb_user} where id = '{$followed_user_id}'";
+        $ret = $this->query($sql);
+        //查询是否已经关注此用户
+        $sql = "select * from {$tb_follow} where user_id = '{$user_id}' and followed_user_id = '{$followed_user_id}'";
+        $followRet = $this->query($sql);
+        if (count($followRet) > 0) {
+            $ret[0]['followed'] = true;
+        } else {
+            $ret[0]['followed'] = false;
+        }
+        return $ret[0];
     }
 }

@@ -92,6 +92,27 @@ class UserController extends Controller
             }
         }
     }
+
+    //查看个人资料
+    public function personalPage()
+    {
+        //1、获取传参
+        $params = array(
+            'user_id' => I('get.user_id'), //用户id
+            'followed_user_id' => I('get.followed_user_id') //所查看用户id
+        );
+
+        //2、检测传参是否合法
+
+        //3、通过model进行数据库操作
+        $mModelRet = $this->mUserModel->personalPage($params);
+        if (count($mModelRet) > 0) {
+            //4、对model获取的数据进行格式化并返回
+            returnApiSuccess("获取成功", $mModelRet);
+        } else {
+            returnApiError("传参错误");
+        }
+    }
 }
 
 

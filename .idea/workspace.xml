@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8951a79c-5579-4189-802c-74b70dc3ad15" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/AnswerController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/AnswerModel.class.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/20914c0f075f91df3579ffbdf5180b02.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Cache\Home\.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Cache\Home\09120ddc2e52791a1e9d33a5ac22b661.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Cache\Home\1c56cda37c99c39e92ead19a0708342b.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Cache\Home\829f47a956969c71bcd2930e796ea6d3.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Cache\Home\9aa6e5f2256c17d2d430b100032b997c.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Cache\Home\a40978b8b42c088d437dc2b0ed8db6eb.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Cache\Home\b59c67bf196a4758191e42f76670ceba.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Cache\Home\index.html" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Cache\index.html" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Data\index.html" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Logs\Common\16_01_06.log" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Logs\Common\16_01_07.log" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Logs\Home\16_01_04.log" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Logs\Home\16_01_05.log" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Logs\Home\16_01_06.log" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Logs\Home\16_01_07.log" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Logs\Home\index.html" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Logs\index.html" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\Temp\index.html" afterPath="" />
-      <change type="DELETED" beforePath="F:\wamp\www\meixue\Application\Runtime\index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Model/QuestionModel.class.php" afterPath="$PROJECT_DIR$/Application/Home/Model/QuestionModel.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/CollectionController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/CollectionModel.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/FollowController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/FollowModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Common/function.php" afterPath="$PROJECT_DIR$/Application/Home/Common/function.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" afterPath="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="meixue.iws" />
@@ -52,37 +31,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AnswerController.class.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/AnswerController.class.php">
+      <file leaf-file-name="CollectionController.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/CollectionController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="316" selection-end="316" vertical-scroll-proportion="0.40282685" vertical-offset="57" max-vertical-offset="760">
+            <state line="38" column="16" selection-start="843" selection-end="843" vertical-scroll-proportion="0.2279152" vertical-offset="593" max-vertical-offset="1159">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionController.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php">
+      <file leaf-file-name="CollectionModel.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Model/CollectionModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="244" selection-end="244" vertical-scroll-proportion="74.10714" vertical-offset="2322" max-vertical-offset="2888">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnswerModel.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Model/AnswerModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="199" selection-end="199" vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="798">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionModel.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Model/QuestionModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="5" selection-start="2381" selection-end="2381" vertical-scroll-proportion="-6.785714" vertical-offset="1368" max-vertical-offset="2299">
+            <state line="75" column="39" selection-start="2634" selection-end="2634" vertical-scroll-proportion="-8.0" vertical-offset="1201" max-vertical-offset="1767">
               <folding />
             </state>
           </provider>
@@ -107,15 +68,19 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Application/Home/Conf/config.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Common/function.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Model/QuestionModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/AnswersController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/AnswerController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Model/AnswerModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/FollowController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/QuestionModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/FollowModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/CollectionModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/CollectionController.class.php" />
       </list>
     </option>
   </component>
@@ -152,6 +117,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,7 +214,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,7 +251,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -321,32 +286,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Home/Model/UserModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="44" selection-start="2190" selection-end="2190" vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="1748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Common/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1976">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="342" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Model/QuestionModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="14" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="589">
@@ -371,13 +310,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Model/UserModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="517" selection-end="517" vertical-scroll-proportion="-13.178572" vertical-offset="30" max-vertical-offset="1748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Common/function.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="22" selection-start="455" selection-end="455" vertical-scroll-proportion="0.28268552" vertical-offset="201" max-vertical-offset="1121">
@@ -385,46 +317,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="36" selection-start="655" selection-end="655" vertical-scroll-proportion="-0.074204944" vertical-offset="593" max-vertical-offset="1881">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="99" selection-end="99" vertical-scroll-proportion="0.20614828" vertical-offset="0" max-vertical-offset="553">
-          <folding>
-            <marker date="1452238555323" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Model/QuestionModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="5" selection-start="2381" selection-end="2381" vertical-scroll-proportion="-6.785714" vertical-offset="1368" max-vertical-offset="2299">
-          <folding />
-        </state>
+        <state line="6" column="1" selection-start="99" selection-end="99" vertical-scroll-proportion="0.20614828" vertical-offset="0" max-vertical-offset="553" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Model/AnswerModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="199" selection-end="199" vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="798">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="244" selection-end="244" vertical-scroll-proportion="74.10714" vertical-offset="2322" max-vertical-offset="2888">
+        <state line="13" column="5" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="798">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/AnswerController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="316" selection-end="316" vertical-scroll-proportion="0.40282685" vertical-offset="57" max-vertical-offset="760">
+        <state line="12" column="5" selection-start="269" selection-end="269" vertical-scroll-proportion="-8.0" vertical-offset="4" max-vertical-offset="760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Model/UserModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="0" selection-end="566" vertical-scroll-proportion="-15.607142" vertical-offset="0" max-vertical-offset="2185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="5" selection-start="0" selection-end="814" vertical-scroll-proportion="-19.535715" vertical-offset="194" max-vertical-offset="2356">
+          <folding>
+            <element signature="e#7#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="5" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2888">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/FollowController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="9" selection-start="1226" selection-end="1690" vertical-scroll-proportion="-14.785714" vertical-offset="1011" max-vertical-offset="1577">
+          <folding>
+            <element signature="e#7#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Model/FollowModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="23" selection-start="1541" selection-end="2999" vertical-scroll-proportion="0.8657244" vertical-offset="1163" max-vertical-offset="1805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Model/QuestionModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="31" selection-start="1862" selection-end="2375" vertical-scroll-proportion="0.81448764" vertical-offset="1078" max-vertical-offset="2299">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Model/CollectionModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="39" selection-start="2634" selection-end="2634" vertical-scroll-proportion="-8.0" vertical-offset="1201" max-vertical-offset="1767">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/CollectionController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="16" selection-start="843" selection-end="843" vertical-scroll-proportion="0.2279152" vertical-offset="593" max-vertical-offset="1159">
           <folding />
         </state>
       </provider>
