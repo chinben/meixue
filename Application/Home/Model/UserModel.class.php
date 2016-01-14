@@ -10,6 +10,54 @@ class UserModel extends Model
     const TB_USER = 'user'; //用户表
     const TB_FOLLOW = 'follow'; //关注表
 
+    //注册
+    public function signUp($params)
+    {
+        //获取并格式化必要参数
+        $tb_user = self::TB_USER;
+        $email = $params['email'];
+        $password = base64_encode($params['password']); //密码通过base64加密
+        $uploadUrl = $params['uploadUrl'];
+        //拼接数据库语句并查询
+        $sql = "select * from {$tb_user} where email = '{$email}'";
+        $ret = $this->query($sql);
+        if (count($ret) > 0) {
+            return false;
+        } else {
+            $sql = "select * from {$tb_user} order by created_at desc limit 0,1";
+            $ret = $this->query($sql);
+            $mx_number = $ret[0]['id'] + 1;
+            $date = date("Y-m-d H:i:s");
+            $UserModel = D('user');
+            $data['password'] = $password;
+            $data['mx_number'] = $mx_number; //美号
+            $data['email'] = $email;
+            $data['mobile'] = "";
+            $data['name'] = "用户" . $mx_number;
+            $data['level'] = 1;
+            $data['score'] = 1;
+            $data['avatar'] = $uploadUrl;
+            $data['profile'] = "";
+            $data['area'] = "";
+            $data['birthday'] = $date;
+            $data['sex'] = 1;
+            $data['created_at'] = $date;
+            $data['updated_at'] = $date;
+            $data['collected_count'] = 0;
+            $data['following_count'] = 0;
+            $data['followers_count'] = 0;
+            $data['rewards_count'] = 1;
+            $data['avatar_url'] = $uploadUrl;
+            $data['avatar_thumb_url'] = $uploadUrl;
+            $addRet = $UserModel->add($data);
+            if ($addRet != false) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
     //登录
     public function login($params)
     {

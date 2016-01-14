@@ -1,0 +1,380 @@
+[ 2016-01-13T14:34:18+08:00 ] 192.168.191.9 /meixue/index.php/home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006680s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0091s ]
+SQL: select * from user where email = 'ben@chamobile.com' and password = 'MTIzNDU2' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005677s ]
+
+[ 2016-01-13T15:20:53+08:00 ] ::1 /meixue/index.php/home/user/signUp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0860s ]
+SQL: select * from user where email = 'ben@chamobile.com' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001157s ]
+
+[ 2016-01-13T15:21:12+08:00 ] ::1 /meixue/index.php/home/user/signUp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1364s ]
+SQL: select * from user where email = 'ben2@chamobile.com' [ RunTime:0.0008s ]
+SQL: select * from user order by created_at desc limit 0,1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0102s ]
+SQL: INSERT INTO `user` (`password`,`mx_number`,`email`,`mobile`,`name`,`level`,`score`,`avatar`,`profile`,`area`,`birthday`,`sex`,`created_at`,`updated_at`,`collected_count`,`following_count`,`followers_count`,`rewards_count`,`avatar_url`,`avatar_thumb_url`) VALUES ('MTIzNDU2','3','ben2@chamobile.com','','用户3','1','1','','','','2016-01-13 15:21:12','1','2016-01-13 15:21:12','2016-01-13 15:21:12','0','0','0','1','','') [ RunTime:0.0839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002497s ]
+
+[ 2016-01-13T15:22:06+08:00 ] 192.168.191.9 /meixue/index.php/home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0100s ]
+SQL: select * from user where email = 'ben2@chamobile.com' and password = 'MTIzNDU2' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2016-01-13T15:22:13+08:00 ] 192.168.191.9 /meixue/index.php/home/question/myQuestionsList?user_id=3&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0849s ]
+SQL: select * from question where user_id = 3 order by created_at desc limit 0,20 [ RunTime:0.1833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002291s ]
+
+[ 2016-01-13T15:22:17+08:00 ] 192.168.191.9 /meixue/index.php/home/questions/answers?user_id=3&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+ERR: 无法加载控制器:Questions
+
+[ 2016-01-13T15:22:19+08:00 ] 192.168.191.9 /meixue/index.php/home/collection/myCollects?user_id=3&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002021s ]
+SQL: SHOW COLUMNS FROM `collection` [ RunTime:0.0462s ]
+SQL: select * from collection where user_id = 3 order by created_at desc limit 0,20 [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002149s ]
+
+[ 2016-01-13T15:22:23+08:00 ] 192.168.191.9 /meixue/index.php/home/follow/following?user_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `follow` [ RunTime:0.0112s ]
+SQL: select * from follow where user_id = '3' order by created_at desc  [ RunTime:0.0196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2016-01-13T15:22:25+08:00 ] 192.168.191.9 /meixue/index.php/home/follow/followers?user_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `follow` [ RunTime:0.0086s ]
+SQL: select * from follow where followed_user_id = '3' order by created_at desc  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2016-01-13T15:22:46+08:00 ] 192.168.191.9 /meixue/index.php/home/questions/answers?user_id=3&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+ERR: 无法加载控制器:Questions
+
+[ 2016-01-13T15:25:08+08:00 ] 192.168.191.9 /meixue/index.php/home/questions/answers?user_id=3&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+ERR: 无法加载控制器:Questions
+
+[ 2016-01-13T15:25:10+08:00 ] 192.168.191.9 /meixue/index.php/home/questions/answers?user_id=3&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002016s ]
+ERR: 无法加载控制器:Questions
+
+[ 2016-01-13T15:41:04+08:00 ] ::1 /meixue/index.php/home/user/signUp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0128s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp\www\meixue\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: select * from user where email = 'ben2@chamobile.com' [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002046s ]
+
+[ 2016-01-13T15:41:17+08:00 ] ::1 /meixue/index.php/home/user/signUp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0115s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp\www\meixue\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: select * from user where email = 'ben3@chamobile.com' [ RunTime:0.0005s ]
+SQL: select * from user order by created_at desc limit 0,1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0061s ]
+SQL: INSERT INTO `user` (`password`,`mx_number`,`email`,`mobile`,`name`,`level`,`score`,`avatar`,`profile`,`area`,`birthday`,`sex`,`created_at`,`updated_at`,`collected_count`,`following_count`,`followers_count`,`rewards_count`,`avatar_url`,`avatar_thumb_url`) VALUES ('MTIzNDU2','4','ben3@chamobile.com','','用户4','1','1','http://192.168.191.1/meixue/Uploads/2016-01-13/5695ff9bb1d5e.png','','','2016-01-13 15:41:15','1','2016-01-13 15:41:15','2016-01-13 15:41:15','0','0','0','1','http://192.168.191.1/meixue/Uploads/2016-01-13/5695ff9bb1d5e.png','http://192.168.191.1/meixue/Uploads/2016-01-13/5695ff9bb1d5e.png') [ RunTime:1.6333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002378s ]
+
+[ 2016-01-13T15:42:17+08:00 ] 192.168.191.9 /meixue/index.php/home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0125s ]
+SQL: select * from user where email = 'ben3@chamobile.com' and password = 'MTIzNDU2' [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001457s ]
+
+[ 2016-01-13T15:42:17+08:00 ] 192.168.191.9 /meixue/index.php/home/questions/answers?user_id=4&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001870s ]
+ERR: 无法加载控制器:Questions
+
+[ 2016-01-13T16:00:19+08:00 ] 192.168.191.9 /meixue/index.php/home/questions/answers?user_id=4&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009961s ]
+ERR: 无法加载控制器:Questions
+
+[ 2016-01-13T16:00:36+08:00 ] 192.168.191.9 /meixue/index.php/home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0594s ]
+SQL: select * from user where email = 'ben3@chamobile.com' and password = 'MTIzNDU2' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017964s ]
+
+[ 2016-01-13T16:00:37+08:00 ] 192.168.191.9 /meixue/index.php/home/questions/answers?user_id=4&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+ERR: 无法加载控制器:Questions
+
+[ 2016-01-13T16:00:54+08:00 ] 192.168.191.9 /meixue/index.php/home/questions/answers?user_id=4&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+ERR: 无法加载控制器:Questions
+
+[ 2016-01-13T16:12:32+08:00 ] 192.168.191.9 /meixue/index.php/home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0164s ]
+SQL: select * from user where email = 'ben3@chamobile.com' and password = 'MTIzNDU2' [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.077977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.078203s ]
+
+[ 2016-01-13T16:12:34+08:00 ] 192.168.191.9 /meixue/index.php/home/question/selectQuestionList?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0964s ]
+SQL: select * from question order by created_at desc limit 0,20 [ RunTime:0.0291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2016-01-13T16:13:59+08:00 ] 192.168.191.9 /meixue/index.php/home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0139s ]
+SQL: select * from user where email = 'ben3@chamobile.com' and password = 'MTIzNDU2' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2016-01-13T16:14:01+08:00 ] 192.168.191.9 /meixue/index.php/home/question/selectQuestionList?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0099s ]
+SQL: select * from question order by created_at desc limit 0,20 [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2016-01-13T16:16:14+08:00 ] 192.168.191.9 /meixue/index.php/home/user/signUp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0269s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp\www\meixue\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: select * from user where email = 'ben4@chamobile.com' [ RunTime:0.0009s ]
+SQL: select * from user order by created_at desc limit 0,1 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0393s ]
+SQL: INSERT INTO `user` (`password`,`mx_number`,`email`,`mobile`,`name`,`level`,`score`,`avatar`,`profile`,`area`,`birthday`,`sex`,`created_at`,`updated_at`,`collected_count`,`following_count`,`followers_count`,`rewards_count`,`avatar_url`,`avatar_thumb_url`) VALUES ('MTIzNDU2','5','ben4@chamobile.com','','用户5','1','1','http://192.168.191.1/meixue/Uploads/2016-01-13/569607cda47c5.jpg','','','2016-01-13 16:16:13','1','2016-01-13 16:16:13','2016-01-13 16:16:13','0','0','0','1','http://192.168.191.1/meixue/Uploads/2016-01-13/569607cda47c5.jpg','http://192.168.191.1/meixue/Uploads/2016-01-13/569607cda47c5.jpg') [ RunTime:0.3527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003141s ]
+
+[ 2016-01-13T16:23:15+08:00 ] 192.168.191.9 /meixue/index.php/home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0338s ]
+SQL: select * from user where email = 'ben4@chamobile.com' and password = 'MTIzNDU2' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2016-01-13T16:36:22+08:00 ] 192.168.191.9 /meixue/index.php/home/question/selectQuestionList?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.288656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.383348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.383743s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:6.3571s ]
+SQL: select * from question order by created_at desc limit 0,20 [ RunTime:1.3518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.139774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.140123s ]
+
+[ 2016-01-13T16:39:45+08:00 ] 192.168.191.9 /meixue/index.php/home/user/signUp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0295s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp\www\meixue\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: select * from user where email = 'ben5@chamobile.com' [ RunTime:0.0549s ]
+SQL: select * from user order by created_at desc limit 0,1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0092s ]
+SQL: INSERT INTO `user` (`password`,`mx_number`,`email`,`mobile`,`name`,`level`,`score`,`avatar`,`profile`,`area`,`birthday`,`sex`,`created_at`,`updated_at`,`collected_count`,`following_count`,`followers_count`,`rewards_count`,`avatar_url`,`avatar_thumb_url`) VALUES ('MTIzNDU2','6','ben5@chamobile.com','','用户6','1','1','http://192.168.191.1/meixue/Uploads/2016-01-13/56960d51679fc.jpg','','','2016-01-13 16:39:45','1','2016-01-13 16:39:45','2016-01-13 16:39:45','0','0','0','1','http://192.168.191.1/meixue/Uploads/2016-01-13/56960d51679fc.jpg','http://192.168.191.1/meixue/Uploads/2016-01-13/56960d51679fc.jpg') [ RunTime:0.2198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002258s ]
+
+[ 2016-01-13T16:40:26+08:00 ] 192.168.191.9 /meixue/index.php/home/question/questionsDetails?question_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0804s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `question` WHERE `id` = 6  [ RunTime:0.0257s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2  [ RunTime:0.0129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2016-01-13T16:40:26+08:00 ] 192.168.191.9 /meixue/index.php/home/answer/answerList?question_id=6&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `answer` [ RunTime:0.0885s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0051s ]
+SQL: select * from answer where question_id = 6 order by created_at desc limit 0,20 [ RunTime:0.2403s ]
+SQL: SELECT * FROM `user` WHERE `id` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002227s ]
+

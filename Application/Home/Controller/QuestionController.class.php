@@ -144,4 +144,21 @@ class QuestionController extends Controller
         }
     }
 
+    //删除问题
+    public function questionsDelete()
+    {
+        //1.获取传参
+        $params = I('post.question_id'); //问题id
+
+        //2.检测传参是否合法
+
+        //3.通过model进行数据库操作
+        $mModelRet = $this->mQuestionModel->questionsDelete($params);
+        if ($mModelRet != false) {
+//            //4.对model获取的数据进行格式化并返回
+            returnApiSuccess("删除成功");
+        } else {
+            returnApiError("删除失败");
+        }
+    }
 }

@@ -19,6 +19,36 @@ class UserController extends Controller
         $this->mUserModel = new \Home\Model\UserModel();
     }
 
+    //邮箱注册
+    public function signUp()
+    {
+        //上传图片
+        $upload = getUpload();
+        // 上传文件
+        $info = $upload->uploadOne($_FILES['avatar']);
+        if (!$info) { // 上传错误提示错误信息
+            returnApiError($upload->getError());
+
+        } else { // 上传成功
+            //1、获取传参
+            $params = array(
+                'email' => I('post.email'), //用户账号
+                'password' => I('post.password'), //用户密码
+                'uploadUrl' => PHOTO_ROOT . $info['savepath'] . $info['savename'], //获取上传文件绝对路径
+            );
+            //2、检测传参是否合法
+
+            //3、通过model进行数据库操作
+            $mModelRet = $this->mUserModel->signUp($params);
+            if ($mModelRet != false) {
+                //4、对model获取的数据进行格式化并返回
+                returnApiSuccess("注册成功");
+            } else {
+                returnApiError("此邮箱已被注册");
+            }
+        }
+    }
+
     //用户登陆接口
     public function login()
     {

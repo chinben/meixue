@@ -113,4 +113,20 @@ class QuestionModel extends Model
         } else
             return array();
     }
+
+    //删除问题
+    public function questionsDelete($params)
+    {
+        //获取参数
+        $question_id = $params;
+
+        $Form = M('question');
+        $questionRet = $Form->delete($question_id);
+        if ($questionRet != false) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
 }
